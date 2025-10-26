@@ -10,6 +10,11 @@ header {
   width: 100%;
   top: 0px;
   left: 0px;
+  z-index: 1000;
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body {
   display: flex;
