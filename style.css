@@ -5,3 +5,34 @@ header {
   font-size: 20px;
   color: white;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f4f4;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 100px); /* 6 boxes per row */
+  grid-gap: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.box:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
