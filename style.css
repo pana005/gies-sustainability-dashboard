@@ -2,12 +2,6 @@ body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: #f4f4f4;
         }
 
         .container {
@@ -95,24 +89,26 @@ body {
         /* 18 Boxes Grid Section */
         .container {
             display: grid;
-            grid-template-columns: repeat(6, 100px); /* 6 boxes per row */
-            grid-gap: 10px; /* spacing between boxes */
+            grid-template-columns: repeat(6, 1fr); /* 6 columns, each taking equal fraction of space */
+            grid-template-rows: repeat(3, 1fr);    /* 3 rows, each taking equal fraction of space */
+            gap: 10px; /* Space between grid items */
+            width: 90%; /* Adjust container width as needed */
+            margin: 20px auto; /* Center the container */
+            border: 1px solid #ccc; /* Optional: container border */
+            padding: 10px; /* Optional: padding inside container */
           }
 
         .box {
-          width: 100px;
-          height: 100px;
-          background-color: #3498db;
-          color: white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-weight: bold;
-          border-radius: 8px;
-          transition: 0.2s;
+            background-color: lightblue; /* Box background color */
+            border: 1px solid steelblue; /* Box border */
+            height: 50px; /* Fixed height for boxes */
+            display: flex; /* Optional: for centering content within boxes */
+            justify-content: center; /* Optional: for centering content within boxes */
+            align-items: center; /* Optional: for centering content within boxes */
+            font-family: sans-serif; /* Optional: font style */
+            color: #333; /* Optional: text color */
         }
-
-
+        
         .box:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
