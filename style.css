@@ -32,9 +32,13 @@ body {
         }
 
         .logo {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #00bcd4; /* A light blue accent */
+            line-height: 0;
+        }
+
+        .logo img {
+            height: 40px; /* Set a fixed height for the logo image */
+            width: auto; /* Maintain aspect ratio */
+            vertical-align: middle;
         }
 
         .header-text {
