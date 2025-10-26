@@ -61,30 +61,7 @@ body {
             background-color: white;
         }
 
-        /* -------------------------------------- */
-        /* CONTENT STYLES */
-        /* -------------------------------------- */
-        .content {
-            padding-top: 40px;
-        }
-
-        /* Recent Publication News Box */
-        .news-box {
-            background-color: white;
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-        }
-
-        .news-box h2 {
-            margin-top: 0;
-            color: #333;
-            border-bottom: 2px solid #00bcd4;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
+        
 
         /* 18 Boxes Grid Section */
         .container {
@@ -108,7 +85,7 @@ body {
             font-family: sans-serif; /* Optional: font style */
             color: #333; /* Optional: text color */
         }
-        
+
         .box:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
