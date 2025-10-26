@@ -1,4 +1,4 @@
-const container = document.getElementById('container');
+const container = document.getElementById('sdg-container');
 
 // Generate 18 boxes automatically
 for (let i = 1; i <= 18; i++) {
