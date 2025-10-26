@@ -96,7 +96,7 @@ body {
         }
 
         .box {
-            flex-basis: calc((100% - (5 * 20px)) / 6); /* Calculation for 6 boxes per row, accounting for gap */
+            flex-basis: calc((100% - (5 * 15px)) / 6); /* Calculation for 6 boxes per row, accounting for gap */
             height: 150px;
             background-color: #ffffff;
             border: 1px solid #ccc;
