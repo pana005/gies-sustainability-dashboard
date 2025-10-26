@@ -1,49 +1,116 @@
-header {
-  background-color: #666;
-  padding: 10px;
-  text-align: left;
-  font-size: 20px;
-  color: white;
-
-}
-.header{
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  z-index: 1000;
-  background-color: blue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #f4f4f4;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(6, 100px); /* 6 boxes per row */
-  grid-gap: 10px;
-}
+        .container {
+            max-width: 1200px; /* Limits main content width */
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: #3498db;
-  color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: 0.2s;
-}
+        /* -------------------------------------- */
+        /* HEADER STYLES */
+        /* -------------------------------------- */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            width: 100%; /* Full width */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.box:hover {
-  background-color: #2980b9;
-  transform: scale(1.05);
-}
+        .header-content {
+            display: flex;
+            justify-content: space-between; /* Spreads items out */
+            align-items: center; /* Centers items vertically */
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #00bcd4; /* A light blue accent */
+        }
+
+        .header-text {
+            font-size: 1.2em;
+            margin: 0 20px; /* Space around the text */
+        }
+
+        .menu-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .menu-icon span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: white;
+        }
+
+        /* -------------------------------------- */
+        /* CONTENT STYLES */
+        /* -------------------------------------- */
+        .content {
+            padding-top: 40px;
+        }
+
+        /* Recent Publication News Box */
+        .news-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .news-box h2 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid #00bcd4;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* 18 Boxes Grid Section */
+        .box-section {
+            padding: 20px 0;
+        }
+
+        .box-grid {
+            display: flex;
+            flex-wrap: wrap; /* Allows boxes to wrap to the next line */
+            gap: 20px; /* Space between the boxes */
+            justify-content: center; /* Center rows if needed */
+        }
+
+        .box {
+            flex-basis: calc((100% / 6) - 17.5px); /* Calculation for 6 boxes per row, accounting for gap */
+            height: 150px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1em;
+            color: #555;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
