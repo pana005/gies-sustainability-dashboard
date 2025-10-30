@@ -22,9 +22,22 @@ nav {
   gap: 0.5em;
 }
 
-.logo a {
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+.logo-title img {
+  width: 45px; /* adjust logo size */
+  height: 45px;
+  object-fit: contain;
+}
+
+.logo-title a {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 1px;
