@@ -82,6 +82,24 @@
   ul li a:hover {
     background-color: #111111;
   }
+/* dropdown */
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #333;
+  padding: 0.5em 0;
+  border-radius: 5px;
+}
 
+nav ul ul li {
+  width: 150px;
+  padding: 0.5em 1em;
+}
+
+nav ul ul li a:hover {
+  color: #00adee;
+}
 
 /* SDG distribution
