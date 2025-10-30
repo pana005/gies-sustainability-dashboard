@@ -8,30 +8,58 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <div class="header">
-        <div class="header-content">
-            <div class="logo"><img src="assets/imgs/uiuc-logo.png"></div>
-
-            <div class="header-text">Gies Sustainability Dashboard</div>
-
-            <div class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-
+  <!-- Navbar -->
+<nav>
+  <div class="navbar-container">
+    <div class="logo"><a href="#">MySite</a></div>
     <ul>
-      <li><a href="#home">Overview</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Search</a></li>
+      <li>
+        <a href="#">Overview ▾</a>
+        <ul>
+          <li><a href="#">Department</a></li>
+          <li><a href="#">Faculty</a></li>
+          <li><a href="#">Item 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">News ▾</a>
+        <ul>
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Search</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
+  </div>
+</nav>
 
-    <video id="background-video" class="background" playsinline="" autoplay="" loop="" muted="" style="transform: scale(1); opacity: 1;">
-      <source src="https://www.equilar.com/images/events/ccf2025/ccf-web-background.mp4" type="video/mp4">
-    </video>
-    
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="https://www.equilar.com/images/events/ccf2025/ccf-web-background.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="overlay">
+    <h1>Data. Drive?? Slogan</h1>
+    <p>Some kind of interesting tagline</p>
+  </div>
+</section>
+
+<!-- Section Bar -->
+<div class="section-bar">
+  <div onmouseover="showContent('content1')">Student</div>
+  <div onmouseover="showContent('content2')">Faculty</div>
+  <div onmouseover="showContent('content3')">Donor</div>
+</div>
+
+<!-- Dynamic Content Area -->
+<div class="section-content" id="section-content">
+  Hover over a section above to see more details here.
+</div>
+
+
     <div class="box-container">
 
 
