@@ -177,14 +177,7 @@ nav ul ul li a:hover {
   border-radius: 8px;
 }
 
-/* Content Area */
-.section-content {
-  text-align: center;
-  padding: 2em;
-  min-height: 150px;
-  background-color: #fff;
-  border-top: 2px solid #eee;
-}
+
 
 /*submission form*/
 body {
