@@ -106,7 +106,7 @@ hr {
   width: 50%; /* Sets the width to 50% of its parent container */
   margin-left: auto; /* Centers the hr line */
   margin-right: auto; /* Centers the hr line */
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .hero {
   position: relative;
