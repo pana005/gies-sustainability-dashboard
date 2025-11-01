@@ -135,46 +135,46 @@ nav ul ul li a:hover {
 }
 
 /* ----- Section Bar with Hover Interaction ----- */
+.info-section {
+  padding: 50px 20px;
+  background: white;
+  text-align: center;
+}
+
+.info-section h2 {
+  color: #00457C;
+  margin-bottom: 20px;
+}
+
 .section-bar {
   display: flex;
   justify-content: center;
-  background-color: #00457C;
-  color: white;
-  cursor: pointer;
+  gap: 50px;
+  margin-bottom: 30px;
 }
 
 .section-bar div {
-  padding: 15px 30px;
-  transition: background-color 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+  color: #00457C;
+  font-size: 18px;
 }
 
 .section-bar div:hover {
-  background-color: #FF552E;
+  text-decoration: underline;
 }
 
 .section-content {
-  padding: 30px;
-  background-color: #f9f9f9;
   text-align: center;
-  transition: all 0.3s ease-in-out;
+  min-height: 200px;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
 }
 
-.content-block {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.content-img {
-  max-width: 100%;
+.section-content img {
+  width: 300px;
   border-radius: 10px;
-  margin-top: 10px;
-}
-
-.graph iframe, .graph img {
-  width: 100%;
-  height: auto;
   margin-top: 15px;
-  border-radius: 8px;
 }
 
 
